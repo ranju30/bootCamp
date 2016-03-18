@@ -1,34 +1,57 @@
 package probability;
 
+import exceptions.InvalidInputException;
+import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 
-import static junit.framework.TestCase.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class ProbabilityTest {
 
-    @Test
-    public void probabilityToGetTailWhenItTossedACoin() {
-        Probability probability = new Probability(2);
-        assertEquals(0.5, probability.getChanceOfOccurrenceAtEveryTime(1));
+    private Probability probability;
+
+    @Rule
+    public ExpectedException thrown = ExpectedException.none();
+
+    @Before
+    public void setUp() throws Exception, InvalidInputException {
+        probability = Probability.create(0.5);
     }
 
     @Test
-    public void probablityToNotGetATailWhileFlippingACoinIsDifferenceOf1AndGettingTail() {
-        Probability probability = new Probability(2);
-        assertEquals(0.5, probability.getChanceOfNotOccurrence(1));
+    public void ExceptionThrownWhenOneAskAProbabilityWithNegativeChance() throws InvalidInputException {
+        thrown.expectMessage("Expected: between 0 to 1,\nActual: -0.1");
+        thrown.expect(InvalidInputException.class);
+        Probability.create(-0.1);
     }
 
     @Test
-    public void probabilityToGetTailsEverytimeWhenFlippingTwoCoinsIs1by4() {
-        Probability probability = new Probability(2);
-        assertEquals(0.25, probability.getChanceOfOccurrenceAtEveryTime(2));
-
+    public void ExceptionThrownWhenOneAskAProbabilityWithGreaterThanOneChance() throws InvalidInputException {
+        thrown.expectMessage("Expected: between 0 to 1,\nActual: 1.1");
+        thrown.expect(InvalidInputException.class);
+        Probability.create(1.1);
     }
 
     @Test
-    public void probabilityOfGettingAtLestOneTailsIs3By4TimesOfNumberOfFlips() {
-        Probability probability = new Probability(2);
-        assertEquals(0.75, probability.getChanceOfAtLeastOneOccurrence(2));
+    public void representTheChanceOfOccuranceWhenAProbabilityIsGiven() throws InvalidInputException {
+        Probability chance = probability.occurrence(probability.create(0.5));
+        Probability expected = Probability.create(0.25);
+        assertTrue(chance.equals(expected));
+    }
 
+    @Test
+    public void representTheChanceOfNotOccurrenceWhenAProbabilityIsGiven() throws InvalidInputException {
+        Probability notOccurrence = probability.notOccurrence();
+        Probability expected = probability.create(0.5);
+        assertTrue(notOccurrence.equals(expected));
+    }
+
+    @Test
+    public void representTheDeMorgansLaw() throws InvalidInputException {
+        Probability occurrence = probability.or(Probability.create(0.5));
+        Probability expected = this.probability.create(0.75);
+        assertTrue(expected.equals(occurrence));
     }
 }

@@ -5,23 +5,49 @@ Job of Probability:
 
 package probability;
 
+import exceptions.InvalidInputException;
+
 public class Probability {
 
-    private int sampleSpace;
+    private double chance;
 
-    public Probability(int sampleSpace) {
-        this.sampleSpace = sampleSpace;
+    private Probability(double chance) {
+        this.chance = chance;
     }
 
-    public double getChanceOfOccurrenceAtEveryTime(int numberOfFlips) {
-        return Math.pow((1.0 / sampleSpace), numberOfFlips);
+    public static Probability create(double chance) throws InvalidInputException {
+        if(chance < 0 || chance > 1)
+            throw new InvalidInputException("Expected: between 0 to 1,\nActual: ",chance);
+        return new Probability(chance);
     }
 
-    public double getChanceOfNotOccurrence(int numberOfFlips) {
-        return 1.0 - this.getChanceOfOccurrenceAtEveryTime(numberOfFlips);
+    public Probability occurrence(Probability anotherProbability) throws InvalidInputException {
+        return create(this.chance * anotherProbability.chance);
     }
 
-    public double getChanceOfAtLeastOneOccurrence(int numberOfFlips) {
-        return 1.0 - this.getChanceOfOccurrenceAtEveryTime(numberOfFlips);
+    public Probability notOccurrence() throws InvalidInputException {
+        return Probability.create(1.0-this.chance);
+    }
+
+    public Probability or(Probability otherProbability) throws InvalidInputException {
+        Probability result = this.notOccurrence().occurrence(otherProbability.notOccurrence());
+        return result.notOccurrence();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Probability that = (Probability) o;
+
+        return Double.compare(that.chance, chance) == 0;
+
+    }
+
+    @Override
+    public int hashCode() {
+        long temp = Double.doubleToLongBits(chance);
+        return (int) (temp ^ (temp >>> 32));
     }
 }
