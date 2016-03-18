@@ -16,8 +16,8 @@ public class Probability {
     }
 
     public static Probability create(double chance) throws InvalidInputException {
-        if(chance < 0 || chance > 1)
-            throw new InvalidInputException("Expected: between 0 to 1,\nActual: ",chance);
+        if (chance < 0 || chance > 1)
+            throw new InvalidInputException("Expected: between 0 to 1,\nActual: ", chance);
         return new Probability(chance);
     }
 
@@ -26,7 +26,7 @@ public class Probability {
     }
 
     public Probability notOccurrence() throws InvalidInputException {
-        return Probability.create(1.0-this.chance);
+        return Probability.create(1.0 - this.chance);
     }
 
     public Probability or(Probability otherProbability) throws InvalidInputException {

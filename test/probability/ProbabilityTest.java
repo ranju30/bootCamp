@@ -36,7 +36,7 @@ public class ProbabilityTest {
 
     @Test
     public void representTheChanceOfOccuranceWhenAProbabilityIsGiven() throws InvalidInputException {
-        Probability chance = probability.occurrence(probability.create(0.5));
+        Probability chance = probability.occurrence(Probability.create(0.5));
         Probability expected = Probability.create(0.25);
         assertTrue(chance.equals(expected));
     }
@@ -44,14 +44,14 @@ public class ProbabilityTest {
     @Test
     public void representTheChanceOfNotOccurrenceWhenAProbabilityIsGiven() throws InvalidInputException {
         Probability notOccurrence = probability.notOccurrence();
-        Probability expected = probability.create(0.5);
+        Probability expected = Probability.create(0.5);
         assertTrue(notOccurrence.equals(expected));
     }
 
     @Test
     public void representTheDeMorgansLaw() throws InvalidInputException {
         Probability occurrence = probability.or(Probability.create(0.5));
-        Probability expected = this.probability.create(0.75);
+        Probability expected = Probability.create(0.75);
         assertTrue(expected.equals(occurrence));
     }
 }
