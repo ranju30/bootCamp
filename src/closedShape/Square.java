@@ -1,4 +1,4 @@
-/*
+package closedShape;/*
 Job of the class -
 Operations with the data associate with the class.
  */
