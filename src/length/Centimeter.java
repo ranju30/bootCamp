@@ -12,6 +12,10 @@ public class Centimeter {
         return new Millimeter(centimeter * 10);
     }
 
+    public Inch convertToInch() {
+        return new Inch(this.centimeter/2.5);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -21,13 +25,5 @@ public class Centimeter {
 
         return Double.compare(that.centimeter, centimeter) == 0;
 
-    }
-
-    public Centimeter add(Centimeter otherCentimeter) {
-        return new Centimeter(this.centimeter + otherCentimeter.centimeter);
-    }
-
-    public Inch convertToInch() {
-        return new Inch(this.centimeter/2.5);
     }
 }

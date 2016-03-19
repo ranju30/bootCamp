@@ -7,7 +7,7 @@ import static org.junit.Assert.assertTrue;
 public class FeetTest {
 
     @Test
-    public void getValueInInch_should_give_me_conversion_of_feet_into_inch() {
+    public void convertToInch_should_give_me_conversion_of_feet_into_inch() {
         Feet feet = new Feet(2);
         Inch inch = new Inch(24);
         assertTrue(feet.convertToInch().equals(inch));

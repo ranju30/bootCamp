@@ -12,6 +12,14 @@ public class Inch {
         return new Centimeter(inch * 2.5);
     }
 
+    public Inch add(Inch otherInch) {
+        return new Inch(this.inch + otherInch.inch);
+    }
+
+    public Inch add(Centimeter centimeter){
+        return new Inch(this.inch+ centimeter.convertToInch().inch);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -21,13 +29,5 @@ public class Inch {
 
         return Double.compare(inch1.inch, inch) == 0;
 
-    }
-
-    public Inch add(Inch otherInch) {
-        return new Inch(this.inch + otherInch.inch);
-    }
-
-    public Inch add(Centimeter centimeter){
-        return this.convertToCentimeter().add(centimeter).convertToInch();
     }
 }

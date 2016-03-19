@@ -17,8 +17,4 @@ public class Millimeter {
 
         return Double.compare(that.millimeter, millimeter) == 0;
     }
-
-    public Millimeter add(Millimeter otherMillimeter) {
-        return new Millimeter(this.millimeter + otherMillimeter.millimeter);
-    }
 }
