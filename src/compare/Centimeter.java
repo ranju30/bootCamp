@@ -1,4 +1,10 @@
-package length;
+/*
+    Job of Feet
+        - to convert centimeter to millimeter.
+        - to convert centimeter to inch.
+        - to compare two centimeter objects.
+ */
+package compare;
 
 public class Centimeter {
 
@@ -13,7 +19,7 @@ public class Centimeter {
     }
 
     public Inch convertToInch() {
-        return new Inch(this.centimeter/2.5);
+        return new Inch(this.centimeter / 2.5);
     }
 
     @Override

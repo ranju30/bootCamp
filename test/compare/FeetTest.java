@@ -1,4 +1,4 @@
-package length;
+package compare;
 
 import org.junit.Test;
 
@@ -15,8 +15,8 @@ public class FeetTest {
 
     @Test
     public void equals_should_give_true_when_same_length_of_feet_are_compared() {
-        Feet feet_A = new Feet(2);
-        Feet feet_B = new Feet(2);
-        assertTrue(feet_A.equals(feet_B));
+        Feet twofeet = new Feet(2);
+        Feet anotherTwoFeet = new Feet(2);
+        assertTrue(twofeet.equals(anotherTwoFeet));
     }
 }

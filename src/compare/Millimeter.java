@@ -1,4 +1,8 @@
-package length;
+/*
+    Job of Feet
+        - to compare two millimeter objects.
+ */
+package compare;
 
 public class Millimeter {
 

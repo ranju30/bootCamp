@@ -1,4 +1,9 @@
-package length;
+/*
+    Job of Feet
+        - to convert feet to inch
+        - to compare two feet objects.
+ */
+package compare;
 
 public class Feet {
 

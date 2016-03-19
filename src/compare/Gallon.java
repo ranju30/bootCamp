@@ -1,4 +1,9 @@
-package length;
+/*
+    Job of Feet
+        - to convert gallon to litter.
+        - to compare two gallon objects.
+ */
+package compare;
 
 public class Gallon {
     private double gallon;
@@ -7,8 +12,8 @@ public class Gallon {
         this.gallon = gallon;
     }
 
-    public Litter convertToLitter() {
-        return new Litter(this.gallon * 3.78);
+    public Litre convertToLitre() {
+        return new Litre(this.gallon * 3.78);
     }
 
     @Override

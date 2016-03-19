@@ -1,4 +1,11 @@
-package length;
+/*
+    Job of Feet
+        - to convert inch to centimeter
+        - to compare two inch objects.
+        - to add two inch objects
+        - to add inch to centimeter
+ */
+package compare;
 
 public class Inch {
 
@@ -16,8 +23,8 @@ public class Inch {
         return new Inch(this.inch + otherInch.inch);
     }
 
-    public Inch add(Centimeter centimeter){
-        return new Inch(this.inch+ centimeter.convertToInch().inch);
+    public Inch add(Centimeter centimeter) {
+        return new Inch(this.inch + centimeter.convertToInch().inch);
     }
 
     @Override

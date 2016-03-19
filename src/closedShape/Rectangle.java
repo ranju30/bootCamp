@@ -17,7 +17,7 @@ public class Rectangle {
 
     public static Rectangle createRectangle(double length, double width) throws InvalidInputException {
         if (length <= 0)
-            throw new InvalidInputException("Expected: positive length\nActual: ", length);
+            throw new InvalidInputException("Expected: positive compare\nActual: ", length);
         if (width <= 0)
             throw new InvalidInputException("Expected: positive width\nActual: ", width);
         return new Rectangle(length, width);
