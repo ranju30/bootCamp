@@ -3,12 +3,10 @@ package compare;
 public class LengthMeasurement extends Measurement {
 
     private double value;
-    private Unit unit;
 
     public LengthMeasurement(double value, Unit unit) {
         super(value, unit);
         this.value = value;
-        this.unit = unit;
     }
 
 

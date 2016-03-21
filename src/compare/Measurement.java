@@ -30,7 +30,7 @@ public abstract class Measurement implements Unit {
 
         Measurement that = (Measurement) otherMeasurement;
 
-        return Double.compare(Math.round(this.value * this.getUnitValue() *100.0)/100.0, Math.round(that.value * that.getUnitValue() * 100.0)/100.0) == 0;
+        return Double.compare(Math.round(this.value * this.getUnitValue() * 100.0) / 100.0, Math.round(that.value * that.getUnitValue() * 100.0) / 100.0) == 0;
     }
 
 }
