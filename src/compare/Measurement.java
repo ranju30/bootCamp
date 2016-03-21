@@ -1,6 +1,6 @@
 package compare;
 
-public class Measurement implements Unit {
+public abstract class Measurement implements Unit {
 
 
     private double value;
@@ -31,10 +31,6 @@ public class Measurement implements Unit {
         Measurement that = (Measurement) otherMeasurement;
 
         return Double.compare(Math.round(this.value * this.getUnitValue() *100.0)/100.0, Math.round(that.value * that.getUnitValue() * 100.0)/100.0) == 0;
-    }
-
-    public Measurement add(Measurement otherMeasurement) {
-        return new Measurement(this.getUnitValue() * this.value + otherMeasurement.getUnitValue() * otherMeasurement.value, this.getBaseUnit());
     }
 
 }
