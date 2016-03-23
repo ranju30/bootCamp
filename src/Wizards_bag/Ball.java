@@ -1,4 +1,9 @@
-package balls;
+/*
+Job of Ball:
+    To check whether same color or not
+ */
+
+package Wizards_bag;
 
 public class Ball {
     private Color ballColor;

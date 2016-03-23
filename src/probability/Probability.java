@@ -44,10 +44,4 @@ public class Probability {
         return Double.compare(that.chance, chance) == 0;
 
     }
-
-    @Override
-    public int hashCode() {
-        long temp = Double.doubleToLongBits(chance);
-        return (int) (temp ^ (temp >>> 32));
-    }
 }
