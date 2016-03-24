@@ -3,3 +3,14 @@ de morgans theorem - P(A || B) = !(!P(A) && !P(B)).
 as a math student i want to compare temparature in farenhite to celcious
     212f = 100c
 
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+As a parking lot attendant, I want to park a car.
+
+As a parking lot attendant, I want to know when the lot is full.
+
+As a parking lot attendant, I want to handle more than one parking lot.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
