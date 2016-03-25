@@ -13,4 +13,12 @@ As a parking lot attendant, I want to know when the lot is full.
 
 As a parking lot attendant, I want to handle more than one parking lot.
 
+As a parking lot attendant, I want an assistant to monitor the same parking lots as me and update a display.
+
+As a parking lot attendant, I want to know when the lot is 80% full so that i don't assign that lot to a trainee.
+
+As a parking lot attendant, I want to know when the lot is 20% or less occupied so that i can promote the lot.
+
+As a civic body, I want to know when the parking lots are 80% full so i can collect more taxes.
+
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

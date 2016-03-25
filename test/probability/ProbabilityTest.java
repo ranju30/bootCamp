@@ -1,6 +1,6 @@
 package probability;
 
-import exceptions.InvalidInputException;
+import probability.exceptions.InvalidInputException;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;

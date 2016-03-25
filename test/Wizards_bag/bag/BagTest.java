@@ -19,7 +19,7 @@ public class BagTest {
     private Bag bag;
 
     @Before
-    public void setUp() throws Throwable{
+    public void setUp() throws Throwable {
         rules = new Rules();
         rules.add(new GreenBallRule());
         rules.add(new RedBallRule());
@@ -32,21 +32,21 @@ public class BagTest {
     public ExpectedException thrown = ExpectedException.none();
 
     @Test
-    public void shouldNotAllowToCreateABagOfSizeMoreThan12() throws Throwable{
+    public void shouldNotAllowToCreateABagOfSizeMoreThan12() throws Throwable {
         thrown.expect(InvalidBagSizeException.class);
         thrown.expectMessage("Capacity should be within 0 to 12");
         Bag.create(13, rules);
     }
 
     @Test
-    public void shouldNotAllowToCreateABagOfSizeLessThan0() throws Throwable{
+    public void shouldNotAllowToCreateABagOfSizeLessThan0() throws Throwable {
         thrown.expect(InvalidBagSizeException.class);
         thrown.expectMessage("Capacity should be within 0 to 12");
         Bag.create(-1, rules);
     }
 
     @Test
-    public void shouldNotAllowToPutMoreBallsThanCapacity() throws Throwable{
+    public void shouldNotAllowToPutMoreBallsThanCapacity() throws Throwable {
         Bag bag = Bag.create(1, rules);
         bag.put(Ball.createGreenBall());
 
@@ -57,13 +57,13 @@ public class BagTest {
     }
 
     @Test
-    public void canAddOneGreenBallAtFirst() throws Throwable{
+    public void canAddOneGreenBallAtFirst() throws Throwable {
         bag.put(Ball.createGreenBall());
         assertEquals(1, bag.getSize());
     }
 
     @Test
-    public void canNotAddMoreThanThreeGreenBall() throws Throwable{
+    public void canNotAddMoreThanThreeGreenBall() throws Throwable {
         bag.put(Ball.createGreenBall());
         bag.put(Ball.createGreenBall());
         bag.put(Ball.createGreenBall());
@@ -74,14 +74,14 @@ public class BagTest {
     }
 
     @Test
-    public void cannotAddRedIfThereIsNoGreen() throws Throwable{
+    public void cannotAddRedIfThereIsNoGreen() throws Throwable {
         thrown.expect(RedBallFullException.class);
         thrown.expectMessage("Can't add anymore red ball");
         bag.put(Ball.createRedBall());
     }
 
     @Test
-    public void canPutAsManyRedBallsAsLessThanDoubleOfGreenBalls() throws Throwable{
+    public void canPutAsManyRedBallsAsLessThanDoubleOfGreenBalls() throws Throwable {
         bag.put(Ball.createGreenBall());
         bag.put(Ball.createGreenBall());
         bag.put(Ball.createRedBall());
@@ -92,7 +92,7 @@ public class BagTest {
     }
 
     @Test
-    public void canPutAsManyBlueBallAsPerTheCapacity() throws Throwable{
+    public void canPutAsManyBlueBallAsPerTheCapacity() throws Throwable {
         Bag bag = Bag.create(2, rules);
         bag.put(Ball.createBlueBall());
         bag.put(Ball.createBlueBall());
@@ -100,7 +100,7 @@ public class BagTest {
     }
 
     @Test
-    public void canNotPutBlueBallMoreThanTheCapacity() throws Throwable{
+    public void canNotPutBlueBallMoreThanTheCapacity() throws Throwable {
         Bag bag = Bag.create(2, rules);
         bag.put(Ball.createBlueBall());
         bag.put(Ball.createBlueBall());
@@ -112,15 +112,15 @@ public class BagTest {
     }
 
     @Test
-    public void canHoldFortyPercentYellowBallsOfBagSize() throws Throwable{
+    public void canHoldFortyPercentYellowBallsOfBagSize() throws Throwable {
         bag.put(Ball.createBlueBall());
         bag.put(Ball.createBlueBall());
         bag.put(Ball.createYellowBall());
-        assertEquals(3,bag.getSize());
+        assertEquals(3, bag.getSize());
     }
 
     @Test
-    public void cannotAddMoreThanFortyPercentYellowBallOfBagSize() throws GreenBallFullException, YellowBallFullException, RedBallFullException, BagFullException {
+    public void cannotAddMoreThanFortyPercentYellowBallOfBagSize() throws Throwable {
         bag.put(Ball.createBlueBall());
         bag.put(Ball.createBlueBall());
         bag.put(Ball.createBlueBall());

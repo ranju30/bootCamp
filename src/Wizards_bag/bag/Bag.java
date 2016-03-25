@@ -5,6 +5,7 @@ import Wizards_bag.balls.Balls;
 import Wizards_bag.exceptions.*;
 import Wizards_bag.rules.Rule;
 import Wizards_bag.rules.Rules;
+import Wizards_bag.summarize.Summary;
 
 public class Bag {
     private int capacity;
@@ -35,5 +36,9 @@ public class Bag {
 
     public int getSize() {
         return balls.size();
+    }
+
+    public Summary summary(){
+        return new Summary(balls);
     }
 }

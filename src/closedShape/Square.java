@@ -4,7 +4,7 @@ Operations with the data associate with the class.
  */
 
 
-import exceptions.InvalidInputException;
+import probability.exceptions.InvalidInputException;
 
 public class Square extends Rectangle {
 

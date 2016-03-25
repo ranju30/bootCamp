@@ -1,4 +1,4 @@
-package exceptions;
+package probability.exceptions;
 
 public class InvalidInputException extends Throwable {
 

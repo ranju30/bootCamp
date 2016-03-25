@@ -9,23 +9,27 @@ public class Ball {
         this.color = color;
     }
 
-    public static Ball createGreenBall(){
+    public static Ball createGreenBall() {
         return new Ball(Color.GREEN);
     }
 
-    public static Ball createRedBall(){
+    public static Ball createRedBall() {
         return new Ball(Color.RED);
     }
 
-    public static Ball createYellowBall(){
+    public static Ball createYellowBall() {
         return new Ball(Color.YELLOW);
     }
 
-    public static Ball createBlueBall(){
+    public static Ball createBlueBall() {
         return new Ball(Color.BLUE);
     }
 
     public boolean isColorOf(Color color) {
         return this.color == color;
+    }
+
+    public Color getColor() {
+        return this.color;
     }
 }

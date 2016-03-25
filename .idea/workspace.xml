@@ -2,36 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76685cc0-b0e1-4fae-aeb7-5a846b206211" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wizards_bag/bag/Bag.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wizards_bag/balls/Ball.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wizards_bag/balls/Balls.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wizards_bag/color/Color.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wizards_bag/exceptions/BagFullException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wizards_bag/exceptions/GreenBallFullException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wizards_bag/exceptions/InvalidBagSizeException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wizards_bag/exceptions/RedBallFullException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wizards_bag/exceptions/YellowBallFullException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wizards_bag/rules/GreenBallRule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wizards_bag/rules/RedBallRule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wizards_bag/rules/Rule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wizards_bag/rules/Rules.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wizards_bag/rules/YellowBallRule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/carParking/Car.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/carParking/ParkingLot.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/carParking/ParkingLotFullException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/carParking/ParkingLots.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/Wizards_bag/bag/BagTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/carParking/ParkingLotTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/carParking/ParkingLotsTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Wizards_bag/Bag.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Wizards_bag/Ball.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Wizards_bag/Color.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/exceptions/IlligalBagCapacityException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/exceptions/InvalidCapacityException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/exceptions/InvalidColoredBallException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/exceptions/OutOfCapacityException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/Wizards_bag/BagTest.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wizards_bag/summarize/Summary.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/carParking/car/Car.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/carParking/car/Cars.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/carParking/criteria/CanAssignToTrainee.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/carParking/criteria/CanPromoteLot.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/carParking/criteria/Criteria.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/carParking/parkingLot/ParkingLot.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/carParking/watcher/Assistant.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/carParking/watcher/CivicBody.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/carParking/watcher/Display.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/carParking/watcher/IncreaseTaxException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/carParking/watcher/Watcher.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/carParking/watcher/Watchers.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/Wizards_bag/summarize/SummaryTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/carParking/criteria/CanAssignToTraineeTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/carParking/criteria/CanPromoteLotTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/carParking/watcher/AssistantTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/carParking/watcher/CivicBodyTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/carParking/Car.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/carParking/ParkingLot.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/carParking/ParkingLotFullException.java" afterPath="$PROJECT_DIR$/src/carParking/parkingLot/ParkingLotFullException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/carParking/ParkingLots.java" afterPath="$PROJECT_DIR$/src/carParking/parkingLot/ParkingLots.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/exceptions/InvalidInputException.java" afterPath="$PROJECT_DIR$/src/probability/exceptions/InvalidInputException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TODO" afterPath="$PROJECT_DIR$/TODO" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wizards_bag/bag/Bag.java" afterPath="$PROJECT_DIR$/src/Wizards_bag/bag/Bag.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wizards_bag/balls/Ball.java" afterPath="$PROJECT_DIR$/src/Wizards_bag/balls/Ball.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wizards_bag/balls/Balls.java" afterPath="$PROJECT_DIR$/src/Wizards_bag/balls/Balls.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wizards_bag/color/Color.java" afterPath="$PROJECT_DIR$/src/Wizards_bag/color/Color.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/closedShape/Rectangle.java" afterPath="$PROJECT_DIR$/src/closedShape/Rectangle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/closedShape/Square.java" afterPath="$PROJECT_DIR$/src/closedShape/Square.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/probability/Probability.java" afterPath="$PROJECT_DIR$/src/probability/Probability.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Wizards_bag/bag/BagTest.java" afterPath="$PROJECT_DIR$/test/Wizards_bag/bag/BagTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/carParking/ParkingLotTest.java" afterPath="$PROJECT_DIR$/test/carParking/ParkingLotTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/carParking/ParkingLotsTest.java" afterPath="$PROJECT_DIR$/test/carParking/ParkingLotsTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/closedShape/RectangleTest.java" afterPath="$PROJECT_DIR$/test/closedShape/RectangleTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/closedShape/SquareTest.java" afterPath="$PROJECT_DIR$/test/closedShape/SquareTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/probability/ProbabilityTest.java" afterPath="$PROJECT_DIR$/test/probability/ProbabilityTest.java" />
     </list>
     <ignored path="bootCamp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,7 +53,13 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/bootCamp$All_in_bootCamp.coverage" NAME="All in bootCamp Coverage Results" MODIFIED="1458583990468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/bootCamp$carParking_in_bootCamp.coverage" NAME="carParking in bootCamp Coverage Results" MODIFIED="1458833792668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>carParking.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/bootCamp$Wizards_bag_bag_in_bootCamp.coverage" NAME="Wizards_bag.bag in bootCamp Coverage Results" MODIFIED="1458911887716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Wizards_bag.bag.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/bootCamp$All_in_bootCamp.coverage" NAME="All in bootCamp Coverage Results" MODIFIED="1458818906570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/bootCamp$BagTest.coverage" NAME="BagTest Coverage Results" MODIFIED="1458708852482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Wizards_bag.*</FILTER>
     </SUITE>
@@ -58,84 +73,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ParkingLot.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/carParking/ParkingLot.java">
+      <file leaf-file-name="Summary.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Wizards_bag/summarize/Summary.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
               <folding>
-                <element signature="e#430#431#0" expanded="true" />
-                <element signature="e#470#471#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#178#179#0" expanded="true" />
+                <element signature="e#212#213#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParkingLots.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/carParking/ParkingLots.java">
+      <file leaf-file-name="SummaryTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/Wizards_bag/summarize/SummaryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-              <folding>
-                <element signature="e#130#142#0" expanded="true" />
-                <element signature="e#192#193#0" expanded="true" />
-                <element signature="e#242#243#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParkingLotFullException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/carParking/ParkingLotFullException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-              <folding>
-                <element signature="e#115#116#0" expanded="true" />
-                <element signature="e#159#160#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParkingLotsTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/carParking/ParkingLotsTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.9002079">
+              <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Car.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/carParking/Car.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.09981516">
-              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TODO" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TODO">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParkingLotTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/carParking/ParkingLotTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -146,8 +105,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
         <option value="JUnit4 Test Class" />
       </list>
     </option>
@@ -163,58 +122,65 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/balls/RedBallContainer.java" />
-        <option value="$PROJECT_DIR$/test/balls/BagTest.java" />
-        <option value="$PROJECT_DIR$/src/balls/Bag.java" />
-        <option value="$PROJECT_DIR$/src/balls/BlueBallContainer.java" />
-        <option value="$PROJECT_DIR$/src/balls/GreenBallContainer.java" />
-        <option value="$PROJECT_DIR$/src/balls/Ball.java" />
-        <option value="$PROJECT_DIR$/src/probability/Probability.java" />
-        <option value="$PROJECT_DIR$/src/bag/Ball.java" />
-        <option value="$PROJECT_DIR$/src/exceptions/InvalidCapacityException.java" />
-        <option value="$PROJECT_DIR$/src/bag/Bag.java" />
-        <option value="$PROJECT_DIR$/src/exceptions/IlligalBagCapacityException.java" />
-        <option value="$PROJECT_DIR$/src/exceptions/OutOfCapacityException.java" />
-        <option value="$PROJECT_DIR$/src/exceptions/InvalidColoredBallException.java" />
-        <option value="$PROJECT_DIR$/src/Wizards_bag/Ball.java" />
-        <option value="$PROJECT_DIR$/src/Wizards_bag/Bag.java" />
-        <option value="$PROJECT_DIR$/src/Wizards_bag/Summary.java" />
-        <option value="$PROJECT_DIR$/test/Wizards_bag/BagTest.java" />
-        <option value="$PROJECT_DIR$/test/Wizards_bag/rule/GreenBallRuleTest.java" />
-        <option value="$PROJECT_DIR$/src/Wizards_bag/ball/Balls.java" />
-        <option value="$PROJECT_DIR$/src/exceptions/GreenBallFullException.java" />
-        <option value="$PROJECT_DIR$/src/exceptions/RedBallFullException.java" />
-        <option value="$PROJECT_DIR$/src/Wizards_bag/rule/RedBallRule.java" />
-        <option value="$PROJECT_DIR$/src/exceptions/YellowBallException.java" />
-        <option value="$PROJECT_DIR$/src/Wizards_bag/rule/YellowRuleBall.java" />
-        <option value="$PROJECT_DIR$/src/Wizards_bag/ball/Ball.java" />
-        <option value="$PROJECT_DIR$/src/Wizards_bag/rule/GreenBallRule.java" />
-        <option value="$PROJECT_DIR$/src/Wizards_bag/rule/Rules.java" />
-        <option value="$PROJECT_DIR$/src/Wizards_bag/rule/Rule.java" />
-        <option value="$PROJECT_DIR$/src/Wizards_bag/color/Color.java" />
-        <option value="$PROJECT_DIR$/src/Wizards_bag/rules/Rule.java" />
-        <option value="$PROJECT_DIR$/src/Wizards_bag/balls/Ball.java" />
-        <option value="$PROJECT_DIR$/src/Wizards_bag/rules/GreenBallRule.java" />
-        <option value="$PROJECT_DIR$/src/Wizards_bag/exceptions/InvalidBagSizeException.java" />
-        <option value="$PROJECT_DIR$/src/Wizards_bag/rules/Rules.java" />
-        <option value="$PROJECT_DIR$/src/Wizards_bag/exceptions/BagFullException.java" />
-        <option value="$PROJECT_DIR$/src/Wizards_bag/balls/Balls.java" />
         <option value="$PROJECT_DIR$/src/Wizards_bag/exceptions/GreenBallFullException.java" />
         <option value="$PROJECT_DIR$/src/Wizards_bag/exceptions/RedBallFullException.java" />
         <option value="$PROJECT_DIR$/src/Wizards_bag/rules/RedBallRule.java" />
         <option value="$PROJECT_DIR$/src/Wizards_bag/exceptions/YellowBallFullException.java" />
         <option value="$PROJECT_DIR$/src/carParking/Car.java" />
-        <option value="$PROJECT_DIR$/src/Wizards_bag/bag/Bag.java" />
-        <option value="$PROJECT_DIR$/test/carParking/ParkingLotTest.java" />
         <option value="$PROJECT_DIR$/src/Wizards_bag/rules/YellowBallRule.java" />
-        <option value="$PROJECT_DIR$/test/Wizards_bag/bag/BagTest.java" />
         <option value="$PROJECT_DIR$/test/carParking/Lot.java" />
-        <option value="$PROJECT_DIR$/test/carParking/ParkingLotsTest.java" />
-        <option value="$PROJECT_DIR$/TODO" />
-        <option value="$PROJECT_DIR$/src/carParking/ParkingLot.java" />
-        <option value="$PROJECT_DIR$/src/carParking/ParkingLots.java" />
         <option value="$PROJECT_DIR$/src/carParking/ParkingLotFullException.java" />
+        <option value="$PROJECT_DIR$/src/probability/exceptions/InvalidInputException.java" />
+        <option value="$PROJECT_DIR$/src/carParking/Watcher.java" />
+        <option value="$PROJECT_DIR$/test/carParking/AssistantTest.java" />
+        <option value="$PROJECT_DIR$/test/carParking/Cars.java" />
+        <option value="$PROJECT_DIR$/src/carParking/Cars.java" />
+        <option value="$PROJECT_DIR$/src/carParking/Assistant.java" />
+        <option value="$PROJECT_DIR$/test/carParking/Watchers.java" />
+        <option value="$PROJECT_DIR$/src/carParking/ParkingLot.java" />
+        <option value="$PROJECT_DIR$/test/carParking/Criteria.java" />
+        <option value="$PROJECT_DIR$/src/carParking/CanAssignToTrainee.java" />
+        <option value="$PROJECT_DIR$/src/carParking/Criteria.java" />
+        <option value="$PROJECT_DIR$/src/carParking/ParkingLots.java" />
+        <option value="$PROJECT_DIR$/src/carParking/criteria/Criteria.java" />
+        <option value="$PROJECT_DIR$/src/carParking/parkingLot/ParkingLotFullException.java" />
+        <option value="$PROJECT_DIR$/src/carParking/watcher/Watchers.java" />
+        <option value="$PROJECT_DIR$/src/carParking/criteria/ShouldPromoteLot.java" />
+        <option value="$PROJECT_DIR$/src/carParking/criteria/CanPromoteLot.java" />
+        <option value="$PROJECT_DIR$/TODO" />
+        <option value="$PROJECT_DIR$/src/carParking/watcher/Watcher.java" />
+        <option value="$PROJECT_DIR$/src/carParking/CivicBody.java" />
+        <option value="$PROJECT_DIR$/src/carParking/IncreaseTaxException.java" />
+        <option value="$PROJECT_DIR$/test/carParking/watcher/AssistantTest.java" />
+        <option value="$PROJECT_DIR$/src/carParking/watcher/IncreaseTaxException.java" />
+        <option value="$PROJECT_DIR$/src/carParking/car/Car.java" />
+        <option value="$PROJECT_DIR$/src/carParking/watcher/Display.java" />
+        <option value="$PROJECT_DIR$/test/carParking/ParkingLotTest.java" />
+        <option value="$PROJECT_DIR$/test/carParking/ParkingLotsTest.java" />
+        <option value="$PROJECT_DIR$/test/carParking/watcher/CivicBodyTest.java" />
+        <option value="$PROJECT_DIR$/test/carParking/criteria/CanAssignToTraineeTest.java" />
+        <option value="$PROJECT_DIR$/test/carParking/criteria/CanPromoteLotTest.java" />
+        <option value="$PROJECT_DIR$/src/carParking/car/Cars.java" />
+        <option value="$PROJECT_DIR$/src/carParking/criteria/CanAssignToTrainee.java" />
+        <option value="$PROJECT_DIR$/src/carParking/parkingLot/ParkingLot.java" />
+        <option value="$PROJECT_DIR$/src/carParking/parkingLot/ParkingLots.java" />
+        <option value="$PROJECT_DIR$/src/carParking/watcher/Assistant.java" />
+        <option value="$PROJECT_DIR$/src/carParking/watcher/CivicBody.java" />
+        <option value="$PROJECT_DIR$/src/Wizards_bag/bag/Bag.java" />
+        <option value="$PROJECT_DIR$/test/Wizards_bag/bag/BagTest.java" />
+        <option value="$PROJECT_DIR$/src/Wizards_bag/color/Color.java" />
+        <option value="$PROJECT_DIR$/src/Wizards_bag/balls/Ball.java" />
+        <option value="$PROJECT_DIR$/src/Wizards_bag/balls/Balls.java" />
+        <option value="$PROJECT_DIR$/src/Wizards_bag/summarize/Summary.java" />
+        <option value="$PROJECT_DIR$/test/Wizards_bag/summarize/SummaryTest.java" />
       </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProjectFrameBounds">
@@ -280,6 +246,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Wizards_bag" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootCamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootCamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wizards_bag" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="bag" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -311,6 +299,68 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wizards_bag" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootCamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootCamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wizards_bag" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="color" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootCamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootCamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wizards_bag" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="balls" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootCamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootCamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -319,7 +369,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../invitation" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -328,84 +378,32 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="Wizards_bag.summarize" />
+      <recent name="carParking.watcher" />
+      <recent name="carParking.criteria" />
       <recent name="carParking" />
       <recent name="Wizards_bag.bag" />
-      <recent name="Wizards_bag.rule" />
-      <recent name="balls" />
-      <recent name="compare" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="Wizards_bag.summarize" />
       <recent name="carParking" />
+      <recent name="carParking.watcher" />
+      <recent name="carParking.criteria" />
       <recent name="Wizards_bag.exceptions" />
-      <recent name="Wizards_bag.bag" />
-      <recent name="Wizards_bag.rules" />
-      <recent name="Wizards_bag.color" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/carParking/car" />
+      <recent name="$PROJECT_DIR$/src/carParking/watcher" />
+      <recent name="$PROJECT_DIR$/src/carParking/parkingLot" />
+      <recent name="$PROJECT_DIR$/src/carParking/criteria" />
       <recent name="$PROJECT_DIR$/src/carParking" />
-      <recent name="$PROJECT_DIR$/src/Wizards_bag/color" />
-      <recent name="$PROJECT_DIR$/src/Wizards_bag/ball" />
-      <recent name="$PROJECT_DIR$/src/Wizards_bag/bag" />
-      <recent name="$PROJECT_DIR$/test/closedShape" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.carParking in bootCamp">
-    <configuration default="false" name="BagTest.cannotAddMoreThanFortyPercentYellowBallOfBagSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Wizards_bag.bag.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="bootCamp" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Wizards_bag.bag" />
-      <option name="MAIN_CLASS_NAME" value="Wizards_bag.bag.BagTest" />
-      <option name="METHOD_NAME" value="cannotAddMoreThanFortyPercentYellowBallOfBagSize" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="BagTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Wizards_bag.bag.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="bootCamp" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Wizards_bag.bag" />
-      <option name="MAIN_CLASS_NAME" value="Wizards_bag.bag.BagTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ParkingLotsTest.parkingLots_can_tell_weather_all_the_lots_are_full_or_not" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SummaryTest.sequentialSummary">
+    <configuration default="false" name="carParking in bootCamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="carParking.*" />
@@ -416,9 +414,9 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="carParking" />
-      <option name="MAIN_CLASS_NAME" value="carParking.ParkingLotsTest" />
-      <option name="METHOD_NAME" value="parkingLots_can_tell_weather_all_the_lots_are_full_or_not" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -452,20 +450,72 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="carParking in bootCamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Wizards_bag.bag in bootCamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="carParking.*" />
+          <option name="PATTERN" value="Wizards_bag.bag.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="bootCamp" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="carParking" />
+      <option name="PACKAGE_NAME" value="Wizards_bag.bag" />
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="SummaryTest.totalSummary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Wizards_bag.summarize.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="bootCamp" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Wizards_bag.summarize" />
+      <option name="MAIN_CLASS_NAME" value="Wizards_bag.summarize.SummaryTest" />
+      <option name="METHOD_NAME" value="totalSummary" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="SummaryTest.sequentialSummary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Wizards_bag.summarize.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="bootCamp" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Wizards_bag.summarize" />
+      <option name="MAIN_CLASS_NAME" value="Wizards_bag.summarize.SummaryTest" />
+      <option name="METHOD_NAME" value="sequentialSummary" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -735,19 +785,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.BagTest.cannotAddMoreThanFortyPercentYellowBallOfBagSize" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.BagTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ParkingLotsTest.parkingLots_can_tell_weather_all_the_lots_are_full_or_not" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.All in bootCamp" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.carParking in bootCamp" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.carParking in bootCamp" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.All in bootCamp" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.Wizards_bag.bag in bootCamp" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.SummaryTest.totalSummary" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.SummaryTest.sequentialSummary" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.carParking in bootCamp" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.All in bootCamp" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ParkingLotsTest.parkingLots_can_tell_weather_all_the_lots_are_full_or_not" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BagTest.cannotAddMoreThanFortyPercentYellowBallOfBagSize" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BagTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.SummaryTest.sequentialSummary" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SummaryTest.totalSummary" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Wizards_bag.bag in bootCamp" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.All in bootCamp" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.carParking in bootCamp" />
       </list>
     </recent_temporary>
   </component>
@@ -826,40 +876,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_bootCamp - 2016.03.24 at 12h 53m 06s.xml">
-      <configuration name="All in bootCamp" configurationId="JUnit" />
+    <history-entry file="SummaryTest_sequentialSummary - 2016.03.26 at 00h 24m 27s.xml">
+      <configuration name="SummaryTest.sequentialSummary" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BagTest - 2016.03.24 at 12h 26m 11s.xml">
-      <configuration name="BagTest" configurationId="JUnit" />
+    <history-entry file="SummaryTest_sequentialSummary - 2016.03.26 at 00h 27m 07s.xml">
+      <configuration name="SummaryTest.sequentialSummary" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BagTest_cannotAddMoreThanFortyPercentYellowBallOfBagSize - 2016.03.24 at 12h 26m 43s.xml">
-      <configuration name="BagTest.cannotAddMoreThanFortyPercentYellowBallOfBagSize" configurationId="JUnit" />
+    <history-entry file="SummaryTest_sequentialSummary - 2016.03.26 at 00h 42m 57s.xml">
+      <configuration name="SummaryTest.sequentialSummary" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BagTest_cannotAddMoreThanFortyPercentYellowBallOfBagSize - 2016.03.24 at 12h 27m 53s.xml">
-      <configuration name="BagTest.cannotAddMoreThanFortyPercentYellowBallOfBagSize" configurationId="JUnit" />
+    <history-entry file="SummaryTest_sequentialSummary - 2016.03.26 at 01h 05m 36s.xml">
+      <configuration name="SummaryTest.sequentialSummary" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BagTest_cannotAddMoreThanFortyPercentYellowBallOfBagSize - 2016.03.24 at 12h 27m 57s.xml">
-      <configuration name="BagTest.cannotAddMoreThanFortyPercentYellowBallOfBagSize" configurationId="JUnit" />
+    <history-entry file="SummaryTest_sequentialSummary - 2016.03.26 at 01h 06m 28s.xml">
+      <configuration name="SummaryTest.sequentialSummary" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BagTest_cannotAddMoreThanFortyPercentYellowBallOfBagSize - 2016.03.24 at 12h 29m 04s.xml">
-      <configuration name="BagTest.cannotAddMoreThanFortyPercentYellowBallOfBagSize" configurationId="JUnit" />
+    <history-entry file="SummaryTest_sequentialSummary - 2016.03.26 at 01h 07m 34s.xml">
+      <configuration name="SummaryTest.sequentialSummary" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BagTest_cannotAddMoreThanFortyPercentYellowBallOfBagSize - 2016.03.24 at 12h 29m 20s.xml">
-      <configuration name="BagTest.cannotAddMoreThanFortyPercentYellowBallOfBagSize" configurationId="JUnit" />
+    <history-entry file="SummaryTest_sequentialSummary - 2016.03.26 at 01h 09m 11s.xml">
+      <configuration name="SummaryTest.sequentialSummary" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BagTest_cannotAddMoreThanFortyPercentYellowBallOfBagSize - 2016.03.24 at 12h 29m 25s.xml">
-      <configuration name="BagTest.cannotAddMoreThanFortyPercentYellowBallOfBagSize" configurationId="JUnit" />
+    <history-entry file="SummaryTest_totalSummary - 2016.03.26 at 00h 39m 46s.xml">
+      <configuration name="SummaryTest.totalSummary" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParkingLotsTest_parkingLots_can_tell_weather_all_the_lots_are_full_or_not - 2016.03.24 at 12h 43m 02s.xml">
-      <configuration name="ParkingLotsTest.parkingLots_can_tell_weather_all_the_lots_are_full_or_not" configurationId="JUnit" />
+    <history-entry file="SummaryTest_totalSummary - 2016.03.26 at 00h 40m 17s.xml">
+      <configuration name="SummaryTest.totalSummary" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="carParking_in_bootCamp - 2016.03.24 at 12h 57m 07s.xml">
-      <configuration name="carParking in bootCamp" configurationId="JUnit" />
+    <history-entry file="SummaryTest_totalSummary - 2016.03.26 at 00h 40m 34s.xml">
+      <configuration name="SummaryTest.totalSummary" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="940" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -868,17 +918,17 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900944" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900944" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900944" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900944" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18253969" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18253969" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900944" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39976415" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39976415" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -919,27 +969,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/lang/Throwable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.19963032">
-          <caret line="113" column="13" selection-start-line="113" selection-start-column="13" selection-end-line="113" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/closedShape/Square.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26617375">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/closedShape/Rectangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23475046">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/probability/ProbabilityTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5009242">
@@ -947,13 +976,6 @@
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/closedShape/SquareTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76709795">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -992,20 +1014,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/compare/LengthUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/compare/Measurement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/compare/LengthMeasurement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1017,32 +1025,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/probability/Probability.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#1332#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/exceptions/InvalidInputException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.043902438">
-          <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wizards_bag/color/Color.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09981516">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1062,8 +1044,8 @@
         <state vertical-scroll-proportion="0.13308688">
           <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
           <folding>
-            <element signature="e#120#121#0" expanded="true" />
-            <element signature="e#171#172#0" expanded="true" />
+            <element signature="e#120#121#0" expanded="false" />
+            <element signature="e#171#172#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1075,38 +1057,6 @@
           <folding>
             <element signature="e#125#126#0" expanded="false" />
             <element signature="e#182#183#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wizards_bag/rules/Rules.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13308688">
-          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wizards_bag/balls/Balls.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06654344">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#448#449#0" expanded="false" />
-            <element signature="e#483#484#0" expanded="false" />
-            <element signature="e#520#521#0" expanded="false" />
-            <element signature="e#558#559#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wizards_bag/rules/GreenBallRule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39926064">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1126,7 +1076,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="20" selection-start-line="10" selection-start-column="7" selection-end-line="15" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1135,14 +1085,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wizards_bag/bag/Bag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1163,36 +1105,39 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="72" selection-start-line="11" selection-start-column="72" selection-end-line="11" selection-end-column="72" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/Wizards_bag/bag/BagTest.java">
+    <entry file="file://$PROJECT_DIR$/src/probability/Probability.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.4972274">
-          <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.19963032">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wizards_bag/balls/Ball.java">
+    <entry file="file://$PROJECT_DIR$/src/compare/LengthUnit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43253234">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-          <folding>
-            <element signature="e#384#385#0" expanded="false" />
-            <element signature="e#429#430#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.26617375">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/probability/exceptions/InvalidInputException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06654344">
+          <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TODO">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6987061">
+          <caret line="21" column="95" selection-start-line="21" selection-start-column="95" selection-end-line="21" selection-end-column="95" />
           <folding />
         </state>
       </provider>
@@ -1200,60 +1145,285 @@
     <entry file="file://$PROJECT_DIR$/test/carParking/ParkingLotTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/carParking/ParkingLotsTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/carParking/watcher/CivicBodyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/carParking/watcher/AssistantTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/carParking/criteria/CanAssignToTraineeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="57" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/carParking/criteria/CanPromoteLotTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="13" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/carParking/parkingLot/ParkingLotFullException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13308688">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding>
+            <element signature="e#126#127#0" expanded="false" />
+            <element signature="e#170#171#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/carParking/watcher/Watchers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13308688">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/carParking/watcher/Watcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13308688">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/carParking/watcher/IncreaseTaxException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06654344">
+          <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/carParking/watcher/Display.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06654344">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/carParking/watcher/CivicBody.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13308688">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/carParking/watcher/Assistant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13308688">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/carParking/criteria/Criteria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06654344">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/compare/Measurement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46580407">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding>
+            <element signature="e#280#281#0" expanded="false" />
+            <element signature="e#322#323#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wizards_bag/rules/GreenBallRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/carParking/ParkingLots.java">
+    <entry file="file://$PROJECT_DIR$/src/Wizards_bag/rules/Rules.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-          <folding>
-            <element signature="e#130#142#0" expanded="true" />
-            <element signature="e#192#193#0" expanded="true" />
-            <element signature="e#242#243#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/carParking/ParkingLotFullException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding>
-            <element signature="e#115#116#0" expanded="true" />
-            <element signature="e#159#160#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/carParking/ParkingLot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#430#431#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/carParking/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09981516">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/carParking/parkingLot/ParkingLots.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3659889">
+          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/carParking/parkingLot/ParkingLot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03512015">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/carParking/criteria/CanPromoteLot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06654344">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/carParking/criteria/CanAssignToTrainee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06654344">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/carParking/car/Cars.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33271718">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding>
+            <element signature="e#210#211#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/carParking/car/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06654344">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Wizards_bag/bag/BagTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="122" column="83" selection-start-line="122" selection-start-column="83" selection-end-line="122" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wizards_bag/bag/Bag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+          <folding>
+            <element signature="e#1082#1083#0" expanded="true" />
+            <element signature="e#1117#1118#0" expanded="true" />
+            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="e#1189#1190#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wizards_bag/color/Color.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wizards_bag/balls/Ball.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+          <folding>
+            <element signature="e#632#633#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wizards_bag/balls/Balls.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="15" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/closedShape/SquareTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.76709795">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wizards_bag/summarize/Summary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#178#179#0" expanded="true" />
+            <element signature="e#212#213#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Wizards_bag/summarize/SummaryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9002079">
+          <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

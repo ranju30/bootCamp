@@ -1,6 +1,6 @@
 package closedShape;
 
-import exceptions.InvalidInputException;
+import probability.exceptions.InvalidInputException;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;

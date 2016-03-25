@@ -5,7 +5,7 @@ Job of Probability:
 
 package probability;
 
-import exceptions.InvalidInputException;
+import probability.exceptions.InvalidInputException;
 
 public class Probability {
 

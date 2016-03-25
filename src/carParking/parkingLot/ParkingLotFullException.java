@@ -1,4 +1,4 @@
-package carParking;
+package carParking.parkingLot;
 
 public class ParkingLotFullException extends Exception {
     public ParkingLotFullException() {

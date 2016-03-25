@@ -14,7 +14,7 @@ public class Balls {
     public int noOfBallsOf(Color color) {
         int count = 0;
         for (Ball ball : balls) {
-            if(ball.isColorOf(color))
+            if (ball.isColorOf(color))
                 count++;
         }
         return count;
@@ -26,5 +26,10 @@ public class Balls {
 
     public boolean add(Ball ball) {
         return balls.add(ball);
+    }
+
+    public Color getColor(int index) {
+        Ball ball = balls.get(index);
+        return ball.getColor();
     }
 }
