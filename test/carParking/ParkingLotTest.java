@@ -1,6 +1,5 @@
 package carParking;
 
-import carParking.car.Car;
 import carParking.criteria.CanAssignToTrainee;
 import carParking.parkingLot.ParkingLot;
 import carParking.parkingLot.ParkingLotFullException;
@@ -22,21 +21,21 @@ public class ParkingLotTest {
     @Test
     public void car_can_be_parked_in_the_lot() throws ParkingLotFullException {
         ParkingLot parkingLot = new ParkingLot(1, new Watchers());
-        assertTrue(parkingLot.park(new Car()));
+        assertTrue(parkingLot.park(new Object()));
     }
 
     @Test
     public void it_can_throw_exception_if_the_lot_is_full() throws ParkingLotFullException {
         ParkingLot parkingLot = new ParkingLot(0, new Watchers());
         exception.expect(ParkingLotFullException.class);
-        parkingLot.park(new Car());
+        parkingLot.park(new Object());
     }
 
     @Test
     public void lot_can_say_weather_lot_is_full_or_not() throws ParkingLotFullException {
         ParkingLot parkingLot = new ParkingLot(1, new Watchers());
         assertFalse(parkingLot.isFull());
-        parkingLot.park(new Car());
+        parkingLot.park(new Object());
         assertTrue(parkingLot.isFull());
     }
 
@@ -45,13 +44,13 @@ public class ParkingLotTest {
         ParkingLot parkingLot = new ParkingLot(5, new Watchers());
         CanAssignToTrainee canAssignToTrainee = new CanAssignToTrainee();
         assertFalse(parkingLot.doesFulfil(canAssignToTrainee));
-        parkingLot.park(new Car());
+        parkingLot.park(new Object());
         assertFalse(parkingLot.doesFulfil(canAssignToTrainee));
-        parkingLot.park(new Car());
+        parkingLot.park(new Object());
         assertFalse(parkingLot.doesFulfil(canAssignToTrainee));
-        parkingLot.park(new Car());
+        parkingLot.park(new Object());
         assertFalse(parkingLot.doesFulfil(canAssignToTrainee));
-        parkingLot.park(new Car());
+        parkingLot.park(new Object());
         assertTrue(parkingLot.doesFulfil(canAssignToTrainee));
     }
 
@@ -61,11 +60,11 @@ public class ParkingLotTest {
         watchers.add(new CivicBody());
         ParkingLot parkingLot = new ParkingLot(5, watchers);
 
-        parkingLot.park(new Car());
-        parkingLot.park(new Car());
-        parkingLot.park(new Car());
-        parkingLot.park(new Car());
+        parkingLot.park(new Object());
+        parkingLot.park(new Object());
+        parkingLot.park(new Object());
+        parkingLot.park(new Object());
         exception.expect(IncreaseTaxException.class);
-        parkingLot.park(new Car());
+        parkingLot.park(new Object());
     }
 }

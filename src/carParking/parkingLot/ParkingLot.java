@@ -1,23 +1,23 @@
 package carParking.parkingLot;
 
-import carParking.car.Car;
-import carParking.car.Cars;
 import carParking.criteria.Criteria;
 import carParking.watcher.Watcher;
 import carParking.watcher.Watchers;
 
+import java.util.ArrayList;
+
 public class ParkingLot {
-    private final Cars lot;
+    private final ArrayList lot;
     private int limit;
     private Watchers watchers;
 
     public ParkingLot(int limit, Watchers watchers) {
         this.limit = limit;
         this.watchers = watchers;
-        this.lot = new Cars();
+        this.lot = new ArrayList<Object>();
     }
 
-    public boolean park(Car car) throws ParkingLotFullException {
+    public boolean park(Object car) throws ParkingLotFullException {
         if (isFull()) throw new ParkingLotFullException();
         for (Watcher watcher : watchers) {
             watcher.update(lot, limit);

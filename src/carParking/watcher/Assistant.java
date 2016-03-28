@@ -1,13 +1,13 @@
 package carParking.watcher;
 
-import carParking.car.Cars;
+import java.util.List;
 
 public class Assistant implements Watcher {
     int numberOfCars = 0;
     int maxCapacity = 0;
 
     @Override
-    public void update(Cars lot, int maxCapacity) {
+    public void update(List lot, int maxCapacity) {
         numberOfCars = lot.size();
         this.maxCapacity = maxCapacity;
     }

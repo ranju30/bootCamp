@@ -1,8 +1,8 @@
 package carParking.watcher;
 
-import carParking.car.Cars;
+import java.util.List;
 
 public interface Watcher {
 
-    void update(Cars lot, int maxCapacity) throws IncreaseTaxException;
+    void update(List lot, int maxCapacity) throws IncreaseTaxException;
 }
